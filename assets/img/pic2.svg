@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="844" height="822" preserveAspectRatio="none" viewBox="0 0 844 822">
+    <g mask="url(&quot;#SvgjsMask4021&quot;)" fill="none">
+        <rect width="844" height="822" x="0" y="0" fill="url(#SvgjsLinearGradient4022)"></rect>
+        <path d="M422 596C468.9 594.1 506.05 561.43 539.39 528.39 572.94 495.14 606.54 458.18 608.67 411 610.87 362.18 584.15 317.94 550.47 282.53 515.78 246.05 472.33 215.58 422 214.72 370.98 213.84 324.94 241.77 289.05 278.05 253.38 314.11 226.71 360.29 227.81 411 228.89 460.82 258.6 503.95 294.68 538.32 329.75 571.73 373.6 597.96 422 596" fill="#488fdb"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask4021">
+            <rect width="844" height="822" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="0.65%" y1="-0.67%" x2="99.35%" y2="100.67%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient4022">
+            <stop stop-color="rgba(14, 50, 71, 1)" offset="0.08"></stop>
+            <stop stop-color="rgba(155, 173, 195, 1)" offset="0.94"></stop>
+        </linearGradient>
+    </defs>
+</svg>
