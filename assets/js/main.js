@@ -1,66 +1,40 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLink = document.querySelectorAll('.nav-links li');
 
-const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-    navClose =  document.getElementById('nav-close')
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+burger.addEventListener('click' , ()=>{
+    nav.classList.toggle('nav-active');
 
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-}
+    navLink.forEach((link, index) =>{ 
+        if(link.style.animation){
+            link.style.animation = ''
+        }
+        else{
+        link.style.animation = `navAppear 0.5s ease forwards ${index / 7 + 1}s`; 
+    }
+    
+    });
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-
-// if(navToggle){
-//     navToggle.addEventListener('click', () =>{
-//         navMenu.classList.remove('show-menu')
-//     })
-// }
-
-if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-    })
+    burger.classList.toggle('toggle');
+});
 
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+navSlide();
 
-const navLink = document.querySelectorAll('.nav__link')
+var lastscrollTop = 0;
+navbar = document.getElementById("header");
+window.addEventListener('scroll', function(){
+    var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+        if(scrollTop > lastscrollTop){
+            header.style.top = "-100px";
+        }
+        else{
+            header.style.top = "0";
+        }
+        lastscrollTop = scrollTop
+})
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*==================== ACCORDION SKILLS ====================*/
-
-
-/*==================== QUALIFICATION TABS ====================*/
-
-
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
-
-/*==================== SHOW SCROLL UP ====================*/ 
-
-
-/*==================== DARK LIGHT THEME ====================*/ 
+document.getElementById("header").style.transition = "all 0.7s";

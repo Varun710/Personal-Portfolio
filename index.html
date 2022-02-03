@@ -18,6 +18,11 @@
 
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        <!-- Skills icons -->
+
+        <script src="https://kit.fontawesome.com/1b54818a4a.js" crossorigin="anonymous"></script>
+
+
         <title>Varun Raghu</title>
     </head>
     <body>
@@ -46,54 +51,29 @@
 
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <nav class="nav container"> 
-                <a href="#" class="nav__logo">Varun Raghu</a>
+            
+            <nav class="navbar">
 
-                <div class="nav__menu" id="nav-menu">
-
-                    <ul class="nav__list grid">
-
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="uil uil-arrow nav__icon"></i> Projects
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-wrench nav__icon"></i> Skills
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-envelope-alt nav__icon"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-
+                <div class="logo">
+                    <h2 class="logo">Varun Raghu</h2>
                 </div>
-
-                <div class="nav__btns">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+    
+                </ul>
+    
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>            
                 </div>
+                
             </nav>
+    
         </header>
 
         <!--==================== MAIN ====================-->
@@ -101,7 +81,7 @@
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
                 <div class="home__container container grid"> 
-                    <div class="home__content grid">
+                    <div class="home-social-icons" >
                         <div class="home__social">
                             <a href="https://www.linkedin.com/in/varun-raghu-190272164/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
@@ -113,6 +93,9 @@
                                 <i class="uil uil-at"></i>
                             </a>
                         </div>
+                    </div>
+
+                    <div class="home__content grid">
 
                         <div class="home__img" id="my_img">
                             
@@ -166,16 +149,22 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odit praesentium numquam nihil nam, neque dolorem quibusdam ipsa eos obcaecati corrupti optio nostrum magni. Ducimus laboriosam corrupti eius nesciunt. Veritatis!
                         </p>
                 </div>
+
+                <!-- <div class="about-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div> -->
         
             </section>
 
             <!--==================== PROJECTS ====================-->
             <section class="project section" id="projects">
-                <h2 class="section__title">Projects</h2>
+                <h2 class="section__title_pro">Projects</h2>
                 <section class="card" data-aos="fade-right">
                     <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
-                    <div>
-                      <h3>Acrylic Painting One</h3>
+                    <div class="pro-one">
+                      <h3>Project One</h3>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
                         enim laudantium, animi veniam libero eveniet culpa unde perferendis
@@ -187,8 +176,8 @@
             
                   <section class="card" data-aos="fade-left">
                     <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
-                    <div>
-                      <h3>Acrylic Painting Two</h3>
+                    <div class="pro-two">
+                      <h3>Project Two</h3>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
                         enim laudantium, animi veniam libero eveniet culpa unde perferendis
@@ -200,8 +189,8 @@
             
                   <section class="card" data-aos="fade-right">
                     <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
-                    <div>
-                      <h3>Acrylic Painting Three</h3>
+                    <div class="pro-three">
+                      <h3>Project Three</h3>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
                         enim laudantium, animi veniam libero eveniet culpa unde perferendis
@@ -216,7 +205,7 @@
 
             <section class="skills_sec" id="skills">
 
-                <h2 class="section__title">Skills</h2>
+                <h2 class="section__title stp">Skills</h2>
 
                 <div class="skill">
                     <div class="set">
@@ -305,9 +294,9 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <div class="button-con">
 
-                                <button type="submit">
+                                <button class="send__button" type="submit">
                                     Send
                                     <i class="uil uil-message button__icon"></i>
                                 </button>
@@ -326,6 +315,30 @@
         <!--==================== FOOTER ====================-->
         <footer class="footer">
 
+                <div class="footer-media">
+
+                    <h3>Varun Raghu</h3>
+
+                    <ul class="socials">
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/varun-raghu-190272164/" target="_blank" class="footer-icons">
+                            <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Varun710" target="_blank" class="footer-icons">
+                            <i class="uil uil-github-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:varunr253@gmail.com" target="_blank" class="footer-icons">
+                            <i class="uil uil-at"></i>
+                            </a>
+                        </li>
+                    </ul>
+                
+                </div>
             
         </footer>
         
