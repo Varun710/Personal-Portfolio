@@ -414,6 +414,93 @@ nav{
 
 /*==================== HOME ====================*/
 
+/* Social icons */
+
+.wrapper{
+    padding-top: 250px;
+    padding-left: 30px;
+    display: grid;
+    row-gap: 30px;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-button{
+  display: flex;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  gap: 10px;
+
+}
+.social-button:hover{
+  width: 200px;
+}
+
+.href{
+    text-decoration: none;
+    color: #000000;
+}
+.social-button .social-icon{
+  display: flex;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  align-items: center;
+  color: #000000;
+}
+.social-button:nth-child(1):hover .social-icon{
+  background: #df3f3f;
+}
+.social-button:nth-child(2):hover .social-icon{
+  background: #000000;
+}
+.social-button:nth-child(3):hover .social-icon{
+  background: #2251b6;
+}
+
+.social-button .social-icon i{
+    padding-left: 18px;
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.social-button:hover .social-icon i{
+  color: rgb(255, 255, 255);
+}
+.social-button span{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+  padding-bottom: 20px;
+}
+.social-button:nth-child(1) span{
+  color: #df3f3f;
+}
+.social-button:nth-child(2) span{
+  color: #000000;
+}
+.social-button:nth-child(3) span{
+  color: #3068e1;
+}
+
+/* End of social icons */
+
+.home__img{
+    padding-left: 280px;
+}
+
 .home{
     min-height: 100vh;
     display: grid;
@@ -431,9 +518,8 @@ nav{
 
     display: flex;
     justify-content: left;
-
+    
 }
-
 
 .home__content{
     grid-template-columns: 0.5fr 3fr;
@@ -485,25 +571,29 @@ nav{
 .home__description{
     margin-bottom: var(--mb-2);
 }
+
+.about__description-2{
+    padding-bottom: 2rem;
+}
 /*==================== BUTTONS ====================*/
 
 .button{
     display: inline-block;
-    background-color: rgb(20, 115, 223);
-    color: rgb(0, 0, 0);
+    background-color: rgb(46, 95, 185);
+    color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
 }
 
 .button:hover{
-    background-color: rgb(72, 140, 218);
+    background-color: rgb(46, 95, 185);
     transform: translateY(0.25rem);
 }
 /*==================== ABOUT ====================*/
 
 .about__container{
-    display: flex;
+    display: grid;
     align-items: center;    
     justify-content: center;
     margin: auto;
@@ -535,6 +625,7 @@ nav{
     background: rgba(243, 235, 217, 0.876);
     width: 100%;
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
   
 img {
@@ -543,15 +634,14 @@ img {
   
   .card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     background: #dad7ce;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    max-width: 900px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 700px;
     margin: auto;
     overflow: auto;
-    padding: 5rem 2rem;
   }
   
   .card h3 {
@@ -572,6 +662,15 @@ img {
 
 /*==================== SKILLS ====================*/
 
+.skill-logo{
+    width: auto;
+    height: 15px;
+    display: grid;
+    padding-left: 118px;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
 .stp{
     padding-bottom: 60px;
 }
@@ -581,7 +680,7 @@ img {
     display: grid;
     place-content: center;
     text-align: center;
-    background: rgba(244, 246, 235, 0.555);
+    background: rgba(179, 182, 163, 0.411);
     width: 100%;
 }
 
@@ -593,12 +692,11 @@ img {
 
 .skill{
     display: flex;
-    grid-gap: 10px;
+    grid-gap: 50px;
     padding: 10px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
     margin-inline: auto;
-    color: turquoise;
     cursor: pointer;
 }
 
@@ -647,24 +745,28 @@ img {
     
 }
 
-.set > header{
+.skills-subt{
     padding-block: 18px;
     font-size: 20px;
     color: black;
     text-align: center;
+    font-weight: 400;
 }
 
-.set .icons{
+.icons{
     padding-block: 8px;
     display: flex;
     grid-template-columns: 1fr 28px;
     color: rgb(102, 102, 102);
     font-size: 16px;
     padding-left: 50px;
+    justify-content: space-between;
+    padding-right: 40px;
+    
     
 }
 
-.set:hover .icons{
+.icons:hover{
     color: rgb(194, 98, 9);
 }
 

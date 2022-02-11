@@ -17,7 +17,14 @@ burger.addEventListener('click' , ()=>{
     });
 
     burger.classList.toggle('toggle');
+
 });
+document.onclick = function(e){
+    if(e.target.id == navLink){
+        nav.classList.remove('nav-active');
+    }
+
+};
 
 }
 
@@ -38,3 +45,5 @@ window.addEventListener('scroll', function(){
 })
 
 document.getElementById("header").style.transition = "all 0.7s";
+
+
