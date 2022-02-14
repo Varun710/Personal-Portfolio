@@ -1,13 +1,12 @@
-/*==================== GOOGLE FONTS ====================*/
+/* GOOGLE FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
 
     /*========== Colors ==========*/
-    /* Change favorite color */
+
     --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
@@ -22,10 +21,9 @@
     --body-color:  #fff;
     --container-color: #fff;
 
-    /*========== Font and typography ==========*/
+    /* Font */
     --body-font: 'Poppins', sans-serif;
 
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -34,12 +32,11 @@
     --small-font-size: 0.84rem;
     --smaller-font-size: 0.75rem;
 
-    /*========== Font weight ==========*/
+    /* Font weight */
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    /* Margin */
     --mb-0-25: 0.25rem;
     --mb-0-5: 0.5rem;
     --mb-0-75: 0.75rem;
@@ -49,7 +46,7 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
+    /* z index */
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
@@ -73,14 +70,6 @@
         --smaller-font-size: 0.813rem;
     }
 }
-
-/*========== Variables Dark theme ==========*/
-
-
-/*========== Button Dark/Light ==========*/
-
-
-/*==================== BASE ====================*/
 
 *{
     box-sizing: border-box;
@@ -119,12 +108,6 @@ img{
     height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
-
-/* .section{
-    padding: 2rem 0 0rem;
-} */
-
 .section__title{
     font-size: var(--h1-font-size);
 }
@@ -132,12 +115,12 @@ img{
 .section__subtitle{
     font-size: var(--small-font-size);
     display: block;
-    /* margin-bottom: var(--mb-3); */
 }
 
 .section__title, .section__subtitle{
     text-align: center;
 }
+
 /*==================== LAYOUT ====================*/
 
 .container{
@@ -202,7 +185,7 @@ img{
     background: rgb(0, 0, 0);
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
-      blink 750ms steps(var(--typewriterCharacters)) infinite;
+      blink 600ms steps(var(--typewriterCharacters)) infinite;
   }
   
   .welcome_note {
@@ -213,7 +196,7 @@ img{
     font-weight: 600;
     opacity: 0;
     transform: translateY(-3rem);
-    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1.5s) forwards;
   }
   
   @keyframes typewriter {
@@ -282,7 +265,7 @@ img{
     }
   }
   
-/*==================== NAV ====================*/
+/* NAV */
 
 nav{
     display: flex;
@@ -412,7 +395,7 @@ nav{
     transform: rotate(45deg) translate(-4px, -4.75px);
 }
 
-/*==================== HOME ====================*/
+/* HOME */
 
 /* Social icons */
 
@@ -575,7 +558,7 @@ nav{
 .about__description-2{
     padding-bottom: 2rem;
 }
-/*==================== BUTTONS ====================*/
+/* BUTTONS */
 
 .button{
     display: inline-block;
@@ -590,7 +573,7 @@ nav{
     background-color: rgb(46, 95, 185);
     transform: translateY(0.25rem);
 }
-/*==================== ABOUT ====================*/
+/* ABOUT */
 
 .about__container{
     display: grid;
@@ -610,7 +593,7 @@ nav{
 }
 
 
-/*==================== PROJECT ====================*/
+/* PROJECT */
 
 .section__title_pro{
     font-size: var(--h1-font-size);
@@ -660,7 +643,7 @@ img {
     order: 2;
   }
 
-/*==================== SKILLS ====================*/
+/* SKILLS */
 
 .skill-logo{
     width: auto;
@@ -726,7 +709,6 @@ img {
 }
 
 .set:hover{
-    /* color: rgb(109, 154, 236); */
     box-shadow: 0px 12px 16px rgb(77, 76, 76);
     
 }
@@ -770,7 +752,7 @@ img {
     color: rgb(194, 98, 9);
 }
 
-/*==================== CONTACT ME ====================*/
+/* CONTACT ME */
 
 .contact__box{
     text-align: center;
@@ -835,7 +817,7 @@ textarea {
 }
 
 
-/*==================== FOOTER ====================*/
+/* FOOTER */
 
 .footer{
     position: relative;
@@ -871,21 +853,3 @@ textarea {
 .footer-icons:hover{
     color: rgb(10, 80, 209);
 }
-/*========== SCROLL UP ==========*/
-
-
-/* Show scroll */
-
-
-/*========== SCROLL BAR ==========*/
-
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */
-
